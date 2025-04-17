@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+import os
+st.write(os.getcwd(), os.listdir(), os.listdir("data") if os.path.isdir("data") else "no data dir")
 
 # Set page configuration
 st.set_page_config(
